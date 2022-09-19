@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:spotifyiuapp/anasayfa.dart';
 
 void main() {
-  /* runApp(MyApp()); */
-  runApp(AnaSayfa());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -73,6 +72,12 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             IconButton(
               onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => AnaSayfa(),
+                  ),
+                );
                 setState(() {
                   activepage = 0;
                 });
@@ -86,6 +91,12 @@ class _MyHomePageState extends State<MyHomePage> {
             Spacer(),
             IconButton(
               onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MyApp(),
+                  ),
+                );
                 setState(() {
                   activepage = 1;
                 });

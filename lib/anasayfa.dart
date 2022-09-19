@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:spotifyiuapp/main.dart';
 
 void main() {
   runApp(AnaSayfa());
@@ -315,6 +316,12 @@ class _AnaSayfaPageState extends State<AnaSayfaPage> {
           children: [
             IconButton(
               onPressed: () {
+                /*  Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MyApp(),
+                  ),
+                ); */
                 setState(() {
                   activepage = 0;
                 });
@@ -328,6 +335,12 @@ class _AnaSayfaPageState extends State<AnaSayfaPage> {
             Spacer(),
             IconButton(
               onPressed: () {
+                /* Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => AnaSayfa(),
+                  ),
+                ); */
                 setState(() {
                   activepage = 1;
                 });
