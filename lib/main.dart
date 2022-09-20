@@ -2,8 +2,12 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:spotifyiuapp/anasayfa.dart';
 
+import 'library.dart';
+
 void main() {
-  runApp(MyApp());
+  /* runApp(MyApp()); */
+  /* runApp(AnaSayfa()); */
+  runApp(Library());
 }
 
 class MyApp extends StatelessWidget {
