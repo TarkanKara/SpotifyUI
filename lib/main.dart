@@ -1,14 +1,16 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:spotifyiuapp/anasayfa.dart';
 import 'package:spotifyiuapp/search.dart';
+import 'package:spotifyiuapp/tophits.dart';
 import 'library.dart';
+import 'dart:ui';
 
 void main() {
   /* runApp(MyApp()); */
   /* runApp(AnaSayfa()); */
   /* runApp(Search()); */
-  runApp(Library());
+  /* runApp(Library()); */
+  runApp(topHits());
 }
 
 class MyApp extends StatelessWidget {

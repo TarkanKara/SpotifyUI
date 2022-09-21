@@ -170,9 +170,9 @@ class _YourSearchState extends State<YourSearch> {
                   decoration: const InputDecoration(
                     border: InputBorder.none,
                     focusedBorder: InputBorder.none,
-                    /*  enabledBorder: InputBorder.none,
+                    enabledBorder: InputBorder.none,
                     errorBorder: InputBorder.none,
-                    disabledBorder: InputBorder.none, */
+                    disabledBorder: InputBorder.none,
                     hintText: "Artists, Songs or Podcasts",
                     hintStyle: TextStyle(color: Color.fromRGBO(28, 28, 28, 1)),
                     prefixIcon: Icon(
