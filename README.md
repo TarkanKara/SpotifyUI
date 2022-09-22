@@ -1,4 +1,4 @@
-# SpotifyUI [SpotifyUI](https://www.figma.com/file/luEQ4RUn8yNslfWSQDhQyc/Spotify-UI-(Community)?node-id=24%3A126)
+# [SpotifyUI](https://www.figma.com/file/luEQ4RUn8yNslfWSQDhQyc/Spotify-UI-(Community)?node-id=24%3A126)
 ## spotifyui with flutter
 
 
