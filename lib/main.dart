@@ -2,15 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:spotifyiuapp/anasayfa.dart';
 import 'package:spotifyiuapp/search.dart';
 import 'package:spotifyiuapp/tophits.dart';
+import 'package:spotifyiuapp/tophits_music.dart';
 import 'library.dart';
 import 'dart:ui';
 
 void main() {
-  /* runApp(MyApp()); */
-  /* runApp(AnaSayfa()); */
-  /* runApp(Search()); */
-  /* runApp(Library()); */
-  runApp(topHits());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -20,7 +17,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyHomePage(),
+      /* home: MyHomePage(), */
+      home: topHits_Music(),
     );
   }
 }
