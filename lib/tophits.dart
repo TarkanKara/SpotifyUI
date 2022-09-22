@@ -1,20 +1,5 @@
 import 'package:flutter/material.dart';
-
-void main() {
-  runApp(topHits());
-}
-
-class topHits extends StatelessWidget {
-  const topHits({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: YourTopHits(),
-    );
-  }
-}
+import 'package:spotifyiuapp/tophits_music.dart';
 
 class YourTopHits extends StatefulWidget {
   const YourTopHits({super.key});
@@ -72,7 +57,9 @@ class _YourTopHitsState extends State<YourTopHits> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
                         icon: Image.asset(
                           "assets/images/icon5.png",
                         ),
@@ -186,7 +173,14 @@ class _YourTopHitsState extends State<YourTopHits> {
                   bottom: 10,
                   right: 5,
                   child: IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: ((context) => topHits_Music()),
+                        ),
+                      );
+                    },
                     icon: Image.asset("assets/images/play.png"),
                     iconSize: 70,
                   ),

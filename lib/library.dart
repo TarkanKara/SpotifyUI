@@ -1,21 +1,6 @@
 import 'package:flutter/material.dart';
-//import 'package:spotify_ui/main.dart';
-
-void main() {
-  runApp(Library());
-}
-
-class Library extends StatelessWidget {
-  const Library({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: YourLibrary(),
-    );
-  }
-}
+import 'package:spotifyiuapp/tophits.dart';
+import 'package:spotifyiuapp/tophits_music.dart';
 
 class YourLibrary extends StatefulWidget {
   const YourLibrary({super.key});
@@ -99,93 +84,107 @@ class _YourLibraryState extends State<YourLibrary> {
               ),
               Row(
                 children: [
-                  Container(
-                    height: 181,
-                    width: 163,
-                    decoration: BoxDecoration(
-                      color: Color.fromRGBO(28, 28, 28, 0.5),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(20),
-                      ),
-                    ),
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: ((context) => YourTopHits()),
+                          ),
+                        );
+                      });
+                    },
                     child: Container(
-                      margin: EdgeInsets.only(top: 15),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Container(
-                            width: 132,
-                            height: 114,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(15),
+                      height: 181,
+                      width: 163,
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(28, 28, 28, 0.5),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(20),
+                        ),
+                      ),
+                      child: Container(
+                        margin: EdgeInsets.only(top: 15),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 132,
+                              height: 114,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(15),
+                                ),
                               ),
-                            ),
-                            child: Column(
-                              children: [
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      width: 66,
-                                      height: 57,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.all(
-                                          Radius.circular(20),
+                              child: Column(
+                                children: [
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                        width: 66,
+                                        height: 57,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.all(
+                                            Radius.circular(20),
+                                          ),
+                                        ),
+                                        child: Image(
+                                          image: AssetImage(yourlibrary[0]),
                                         ),
                                       ),
-                                      child: Image(
-                                        image: AssetImage(yourlibrary[0]),
+                                      Container(
+                                        width: 66,
+                                        height: 57,
+                                        child: Image(
+                                          image: AssetImage(yourlibrary[1]),
+                                        ),
                                       ),
-                                    ),
-                                    Container(
-                                      width: 66,
-                                      height: 57,
-                                      child: Image(
-                                        image: AssetImage(yourlibrary[1]),
+                                    ],
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                        width: 66,
+                                        height: 57,
+                                        child: Image(
+                                          image: AssetImage(yourlibrary[2]),
+                                        ),
                                       ),
-                                    ),
-                                  ],
-                                ),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      width: 66,
-                                      height: 57,
-                                      child: Image(
-                                        image: AssetImage(yourlibrary[2]),
+                                      Container(
+                                        width: 66,
+                                        height: 57,
+                                        child: Image(
+                                          image: AssetImage(yourlibrary[3]),
+                                        ),
                                       ),
-                                    ),
-                                    Container(
-                                      width: 66,
-                                      height: 57,
-                                      child: Image(
-                                        image: AssetImage(yourlibrary[3]),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Container(
-                            width: 130,
-                            child: Text(
-                              "Playlists #1",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 17,
+                                    ],
+                                  ),
+                                ],
                               ),
                             ),
-                          ),
-                        ],
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Container(
+                              width: 130,
+                              child: Text(
+                                "Playlists #1",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 17,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),

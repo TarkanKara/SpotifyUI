@@ -9,7 +9,6 @@ class topHits_Music extends StatefulWidget {
 
 class _topHits_MusicState extends State<topHits_Music> {
   double _value = 0;
-
   final List<String> topHitsMusic = [
     "assets/images/music1.png",
     "assets/images/music2.png",
@@ -39,7 +38,11 @@ class _topHits_MusicState extends State<topHits_Music> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        Navigator.pop(context);
+                      });
+                    },
                     icon: Image.asset("assets/images/icon10.png"),
                   ),
                   Text(

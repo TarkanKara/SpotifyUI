@@ -1,21 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(Search());
-}
-
-class Search extends StatelessWidget {
-  const Search({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: YourSearch(),
-    );
-  }
-}
-
 class YourSearch extends StatefulWidget {
   const YourSearch({super.key});
 
@@ -60,67 +44,6 @@ class _YourSearchState extends State<YourSearch> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      bottomNavigationBar: Container(
-        padding: EdgeInsets.all(20),
-        height: 80,
-        decoration: BoxDecoration(color: Colors.black),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            IconButton(
-              onPressed: () {
-                /* Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => AnaSayfa(),
-                  ),
-                ); */
-                setState(() {
-                  activepage = 0;
-                });
-              },
-              icon: Icon(
-                Icons.home,
-                color: activepage == 0 ? Colors.green : Colors.white,
-                size: 35,
-              ),
-            ),
-            Spacer(),
-            IconButton(
-              onPressed: () {
-                /* Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => MyApp(),
-                  ),
-                ); */
-                setState(() {
-                  activepage = 1;
-                });
-              },
-              icon: Icon(
-                Icons.search,
-                color: activepage == 1 ? Colors.green : Colors.white,
-                size: 35,
-              ),
-            ),
-            Spacer(),
-            IconButton(
-              onPressed: () {
-                setState(() {
-                  activepage = 2;
-                });
-              },
-              icon: Icon(
-                Icons.library_books_outlined,
-                color: activepage == 2 ? Colors.green : Colors.white,
-                size: 35,
-              ),
-            ),
-          ],
-        ),
-      ),
       body: Container(
         padding: EdgeInsets.only(
           right: 16,

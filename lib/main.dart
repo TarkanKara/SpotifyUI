@@ -1,8 +1,9 @@
-import 'package:flutter/material.dart';
-import 'package:spotifyiuapp/anasayfa.dart';
-import 'package:spotifyiuapp/search.dart';
-import 'package:spotifyiuapp/tophits.dart';
+import 'package:spotifyiuapp/navigationScreen.dart';
 import 'package:spotifyiuapp/tophits_music.dart';
+import 'package:spotifyiuapp/homepage.dart';
+import 'package:spotifyiuapp/tophits.dart';
+import 'package:spotifyiuapp/search.dart';
+import 'package:flutter/material.dart';
 import 'library.dart';
 import 'dart:ui';
 
@@ -17,8 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      /* home: MyHomePage(), */
-      home: topHits_Music(),
+      home: NavigationScreen(),
     );
   }
 }
