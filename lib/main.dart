@@ -1,3 +1,4 @@
+import 'package:spotifyiuapp/login.dart';
 import 'package:spotifyiuapp/navigationScreen.dart';
 import 'package:spotifyiuapp/tophits_music.dart';
 import 'package:spotifyiuapp/homepage.dart';
@@ -18,21 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: NavigationScreen(),
+      home: loginn(),
     );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
   }
 }
