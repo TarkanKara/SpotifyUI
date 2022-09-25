@@ -1,5 +1,16 @@
-# [SpotifyUI](https://www.figma.com/file/EOWxWwK4gk6my0U9zNDT2m/Spotify-UI-(Community)?node-id=24%3A126)
-## spotifyui with flutter
+# spotifyiuapp
 
+A new Flutter project.
 
-![SpotifyUI](https://user-images.githubusercontent.com/59411109/191864456-5a60217d-0b5b-4b12-b413-99e3c1540725.gif)
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

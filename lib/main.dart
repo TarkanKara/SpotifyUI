@@ -1,3 +1,4 @@
+import 'package:spotifyiuapp/getStarted.dart';
 import 'package:spotifyiuapp/login.dart';
 import 'package:spotifyiuapp/navigationScreen.dart';
 import 'package:spotifyiuapp/tophits_music.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: loginn(),
+      home: GetStarted(),
     );
   }
 }
